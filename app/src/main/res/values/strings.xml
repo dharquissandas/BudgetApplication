@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">SmartWallet</string>
+    <string name="action_settings">Preferences</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_add_income">add_income</string>
+    <string name="Expense_title">Add your expense</string>
+    <string name="type">Type</string>
+    <string name="amount">Amount</string>
+    <string name="timeframe">timeframe</string>
+    <string name="importance">importance</string>
+    <string name="submit_button">Submit</string>
+    <string name="expensenotes">notes</string>
+    <string name="expensenotetext">Note</string>
+    <string name="category">Category</string>
+    <string name="categories">Categories</string>
+    <string name="checkboxrforexpenses">CheckBox</string>
+    <string-array name="expensetype_array">
+        <item>One-off</item>
+        <item>Temporary</item>
+        <item>Permanent</item>
+    </string-array>
+    <string-array name="expensecategory_array">
+        <item>Expense Categories</item>
+        <item>Apparel</item>
+        <item>Education</item>
+        <item>Entertainment</item>
+        <item>Food</item>
+        <item>Gadgets</item>
+        <item>Health and beauty</item>
+        <item>Self-development</item>
+        <item>Social</item>
+        <item>Transport</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="incomecategory_array">
+        <item>Income Categories</item>
+        <item>Salary</item>
+        <item>Rent</item>
+        <item>Profit</item>
+        <item>Personal Savings</item>
+        <item>Investments</item>
+        <item>Pension</item>
+        <item>Odd jobs</item>
+        <item>Winnings</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="account">
+        <item>Select an Account</item>
+        <item>Cash</item>
+        <item>Credit card</item>
+        <item>Debit card</item>
+        <item>Online payment services</item>
+        <item>On credit</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="title_activity_add_expense">add_expense</string>
+    <string name="title_activity_settings">Preferences</string>
+    <string name="title_overall_data_analysis">Data analytics - Overall</string>
+    <string name="title_income_data_analysis">Data analytics - Income</string>
+    <string name="title_expense_data_analysis">Data analytics - Expense</string>
+    <string name="delete_all_income">Delete All Registered Income</string>
+    <string name="delete_all_expense">Delete All Registered Expense</string>
+    <string name="delete_all_income_detail">This will delete all incomes that are currently present</string>
+    <string name="delete_all_expense_detail">This will delete all expenses that are currently present</string>
+    <string name="delete_all_savings">Delete All Registered Savings</string>
+    <string name="delete_all_adjustments">Delete All Registered Adjustments</string>
+    <string name="delete_all_savings_detail">This will delete all savings that are currently present</string>
+    <string name="delete_all_adjustments_detail">This will delete all adjustments that are currently present</string>
+    <string name="backup1">Import Database </string>
+    <string name="backup1_description">Import pre-existing database. This will delete currently entered data</string>
+    <string name="backup2">Export Database </string>
+    <string name="backup2_description">Export database which can be imported later</string>
+    <string name="general">General</string>
+    <string name="backupsettings">Backup and Import</string>
+    <string name="app">Application</string>
+    <string name="report_a_bug">Report a bug</string>
+    <string name="report_details">Tell us about any bugs you find the application</string>
+    <string name="Feedback">Feedback</string>
+    <string name="Feedback_details">Tell us about any improvements you would like to see in the next update</string>
+    <string name="budget_name">SmartWallet 1.0.0 </string>
+    <string name="app_details">Made by Moksh Pandya &amp; Deep Harquissandas </string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="expense_type_frequency">EXPENSE TYPE FREQUENCY</string>
+    <string name="example_graph2">Example Graph</string>
+    <string name="income_type_frequency">INCOME TYPE FREQUENCY</string>
+    <string name="total_budget">TOTAL BUDGET</string>
+    <string name="total_expense">TOTAL EXPENSE</string>
+    <string name="string_total_expense">Total expense</string>
+    <string name="total_income">TOTAL INCOME</string>
+    <string name="example_income">Example</string>
+    <string name="example_Expense">example</string>
+    <string name="example_total">example</string>
+    <string name="data_analysis_option">Data Analytics</string>
+    <string name="by_category_option">By Category</string>
+    <string name="by_account_option">By Account</string>
+    <string name="expense_option">Expense</string>
+    <string name="income_option">Income</string>
+    <string name="overall_option">Overall</string>
+    <string name="menu_open">drawer open</string>
+    <string name="menu_close">drawer close</string>
+    <string name="share_option">Share</string>
+    <string name="adjust_option">Balance adjustments</string>
+    <string name="help_option">Help</string>
+    <string name="feeedback_option">Feedback</string>
+    <string name="savings_option">Savings</string>
+    <string name="home_option">Home</string>
+    <string name="table_data_button">Table</string>
+    <string name="Pie_chart_data_button">Pie chart</string>
+    <string name="accounts">Accounts</string>
+    <string name="balance">Balance</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+
+    <string name="cash">Cash</string>
+    <string name="credit_card">Credit card</string>
+    <string name="debit_card">Debit card</string>
+    <string name="online_payment_services">Online payment services</string>
+    <string name="on_credit">On credit</string>
+    <string name="other">Other</string>
+    <string name="total">Total</string>
+    <string name="online_payment_services_linebreak">Online \n payment services</string>
+    <string name="salary">Salary</string>
+    <string name="rent">Rent</string>
+    <string name="profit">Profit</string>
+    <string name="personal_savings">Personal savings</string>
+    <string name="investments">Investments</string>
+    <string name="pension">Pension</string>
+    <string name="odd_jobs">Odd jobs</string>
+    <string name="winnings">Winnings</string>
+    <string name="other_category_linebreak">Other \ncategories</string>
+    <string name="other_category">Other categories</string>
+    <string name="category2">Category</string>
+    <string name="other_accounts">Other accounts</string>
+    <string name="apparel">Apparel</string>
+    <string name="education">Education</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="food">Food</string>
+    <string name="gadget">Gadgets</string>
+    <string name="healthandbeauty">Health and beauty</string>
+    <string name="selfdevelopment">Self-development</string>
+    <string name="social">Social</string>
+    <string name="transport">Transport</string>
+    <string name="other_categories">Other categories</string>
+    <string name="transfer_savings">Transfer to savings</string>
+    <string name="adjustments_amount">Adjust balance</string>
+    <string name="adjust_button">Adjust</string>
+    <string name="transfer_button">Transfer</string>
+    <string name="title_activity_savings">Savings</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_adjustments">Adjustments</string>
+
+    <string name="help_recording_transactions">RECORDING TRANSACTIONS</string>
+    <string name="help_recording_transactions_detail">You can add income and expense through the floating add button at the bottom of the home screen. The recorded income and expense can be seen in the income and expense tabs located at the top of the home screen. To edit or delete a recorded transaction, click on it and select delete or edit.</string>
+    <string name="help_data_analytics">DATA ANALYTICS</string>
+    <string name="help_data_analytics_detail">Income, expense and overall balance data is displayed in a table format and a pie chart format. The table format shows a clear breakdown of the data for categories and accounts. Please note that the pie chart doesn’t display adjustments and savings because displaying it will make the pie chart inaccurate.</string>
+    <string name="help_adjusting_balance">ADJUSTING BALANCE</string>
+    <string name="help_adjusting_balance_detail">Balances can be adjusted from the income or expense tab in the home screen by using the adjust balance and inputting the adjustment amount. Adjustments made in the income tab will be added and adjustments made in the expense tab will be deducted. Your adjustment history will be shown in “Balance adjustments” section of the app.</string>
+    <string name="help_Savings">SAVINGS</string>
+    <string name="help_savings_detail">Any amount from the total budget can be transferred to the “Savings” section of the app using the transfer to savings from the overview tab in the home screen. The savings section displays and tracks your progress for various financial goals. </string>
+    <string name="help_others">OTHER</string>
+    <string name="help_others_detail">You can find currency changing settings and the option to delete income and expenses in the Preferences section. If you find a bug, please report it to us using Preferences. In addition, if you have any feedback for how to improve our app, please let us know using either the Feedback option in the Preferences section or in the menu.</string>
+    <string name="title_activity_all_adjustments">AllAdjustments</string>
+    <string name="tab_text_1">Income</string>
+    <string name="tab_text_2">Expense</string>
+
+
+</resources>

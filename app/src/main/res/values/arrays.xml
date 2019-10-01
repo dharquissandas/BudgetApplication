@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listArray">
+        <item>(£) British Pound</item>
+        <item>($) American Dollar</item>
+        <item>(€) Euro</item>
+        <item>(₹) Indian Rupees</item>
+        <item>(¥) Japanese Yen</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>£</item>
+        <item>$</item>
+        <item>€</item>
+        <item>₹</item>
+        <item>¥</item>
+    </string-array>
+</resources>

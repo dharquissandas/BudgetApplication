@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schema.android.com/tools"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="com.dharquissandas.budget.MainActivity"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:orientation="horizontal"
+                    android:scrollbarTrackVertical="@color/red"
+                    android:scrollbars="vertical"
+                    tools:context="com.dharquissandas.budget.MainActivity">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_expense_data1"
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="3dp">
+
+                        <TextView
+                            android:id="@+id/Expense_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="TOTAL EXPENSE"
+                            android:textColor="@color/colorAccent" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="30dp"
+                            android:background="#e0e0e0" />
+
+
+                        <TextView
+                            android:id="@+id/TotalExpense2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="4dp"
+                            android:text="example"
+                            android:textSize="20sp" />
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:orientation="horizontal"
+                    android:scrollbarTrackVertical="@color/red"
+                    android:scrollbars="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:context="com.dharquissandas.budget.MainActivity">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="3dp">
+
+                        <TextView
+                            android:id="@+id/Piechart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="EXPENSE ACCOUNT PIECHART"
+                            android:textColor="@color/colorAccent" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="30dp"
+                            android:background="#e0e0e0" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="35dp">
+
+                            <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/Expense_accounts_pie"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+
+                            <!--            <TableLayout
+                                            android:id="@+id/Pie_legend"
+                                            android:layout_width="120dp"
+                                            android:layout_height="180dp"
+                                            android:layout_toEndOf="@+id/income_pie"
+                                            android:layout_marginEnd="0dp"
+                                            android:visibility="visible">
+                                            <TableRow> <ImageView
+                                                android:layout_column="1"
+                                                android:src="@color/colorPrimaryDark"
+                                                android:minWidth="15dip"
+                                                android:minHeight="15dip"
+                                                android:layout_gravity="center_vertical"
+                                                android:paddingEnd="1.5dip"
+                                                android:paddingBottom="3dip"/>
+                                                <TextView
+                                                    android:text="@string/cash"
+                                                    android:textColor="@color/colorPrimaryDark"
+                                                    android:paddingBottom="3dip"
+                                                    android:paddingStart="1.5dip"
+                                                    android:textSize="18sp"/>
+                                            </TableRow>
+                                            <TableRow> <ImageView
+                                                android:layout_column="1"
+                                                android:src="@color/colorAccent"
+                                                android:minWidth="15dip"
+                                                android:minHeight="15dip"
+                                                android:paddingEnd="1.5dip"
+                                                android:paddingBottom="3dip"
+                                                android:layout_gravity="center_vertical"/>
+                                                <TextView
+                                                    android:text="@string/credit_card"
+                                                    android:textColor="@color/colorAccent"
+                                                    android:paddingBottom="3dip"
+                                                    android:paddingStart="1.5dip"
+                                                    android:textSize="16sp"
+                                                    />
+                                            </TableRow>
+                                            <TableRow> <ImageView
+                                                android:layout_column="1"
+                                                android:src="@color/red"
+                                                android:minWidth="15dip"
+                                                android:minHeight="15dip"
+                                                android:paddingEnd="1.5dip"
+                                                android:paddingBottom="3dip"
+                                                android:layout_gravity="center_vertical"/>
+                                                <TextView
+                                                    android:text="@string/debit_card"
+                                                    android:textColor="@color/red"
+                                                    android:paddingBottom="3dip"
+                                                    android:paddingStart="1.5dip"
+                                                    android:textSize="16sp"
+                                                    />
+                                            </TableRow>
+                                            <TableRow> <ImageView
+                                                android:layout_column="1"
+                                                android:src="@color/fab2_color"
+                                                android:minWidth="15dip"
+                                                android:minHeight="15dip"
+                                                android:paddingEnd="1.5dip"
+                                                android:paddingBottom="3dip"
+                                                android:layout_gravity="center_vertical"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:minLines="2"
+                                                    android:paddingBottom="3dip"
+                                                    android:paddingStart="1.5dip"
+                                                    android:text="Online payment \nservices"
+                                                    android:textColor="@color/fab2_color"
+                                                    android:textSize="15sp" />
+                                            </TableRow>
+                                            <TableRow> <ImageView
+                                                android:layout_column="1"
+                                                android:src="@color/blacktext"
+                                                android:minWidth="15dip"
+                                                android:minHeight="15dip"
+                                                android:paddingEnd="1.5dip"
+                                                android:paddingBottom="3dip"
+                                                android:layout_gravity="center_vertical"
+                                                />
+                                                <TextView
+                                                    android:text="@string/on_credit"
+                                                    android:textSize="18sp"
+                                                    android:textColor="@color/blacktext"
+                                                    android:paddingBottom="3dip"
+                                                    android:paddingStart="1.5dip"
+                                                    />
+                                            </TableRow>
+                                            <TableRow> <ImageView
+                                                android:layout_column="1"
+                                                android:src="@color/dark_green"
+                                                android:minWidth="15dip"
+                                                android:minHeight="15dip"
+                                                android:paddingEnd="1.5dip"
+                                                android:paddingBottom="3dip"
+                                                android:layout_gravity="center_vertical"/>
+
+                                                <TextView
+                                                    android:layout_height="wrap_content"
+                                                    android:paddingBottom="3dip"
+                                                    android:paddingStart="1.5dip"
+                                                    android:text="@string/other"
+                                                    android:textColor="@color/dark_green"
+                                                    android:textSize="18sp" />
+                                            </TableRow>
+                                        </TableLayout> -->
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:orientation="horizontal"
+                    android:scrollbarTrackVertical="@color/red"
+                    android:scrollbars="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:context="com.dharquissandas.budget.MainActivity">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_expense_accounts_table"
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="3dp">
+
+                        <TextView
+                            android:id="@+id/Expense_table_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="EXPENSE ACCOUNT TABLE"
+                            android:textColor="@color/colorAccent" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="30dp"
+                            android:background="#e0e0e0" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="35dp"
+                            android:layout_marginStart="8dp">
+
+                            <TableLayout
+                                android:id="@+id/expense_accounts_table"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/cash"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_cash"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/credit_card"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_credit_card"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                </TableRow>
+
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/debit_card"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_debit_card"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/online_payment_services"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_online_payment_services"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/on_credit"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_on_credit"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/other"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_other_account"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/total"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_total"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+                                </TableRow>
+                            </TableLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:orientation="horizontal"
+                    android:scrollbarTrackVertical="@color/red"
+                    android:scrollbars="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:context="com.dharquissandas.budget.MainActivity">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card2"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="3dp">
+
+                        <TextView
+                            android:id="@+id/CategoryPiechart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="EXPENSE CATEGORY PIECHART"
+                            android:textColor="@color/colorAccent" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="30dp"
+                            android:background="#e0e0e0" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="35dp">
+
+                            <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/Expense_category_pie"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                />
+
+                            <!--            <TableLayout
+                                            android:id="@+id/Pie_legend"
+                                            android:layout_width="120dp"
+                                            android:layout_height="180dp"
+                                            android:layout_toEndOf="@+id/income_pie"
+                                            android:layout_marginEnd="0dp"
+                                            android:visibility="visible">
+                                            <TableRow> <ImageView
+                                                android:layout_column="1"
+                                                android:src="@color/colorPrimaryDark"
+                                                android:minWidth="15dip"
+                                                android:minHeight="15dip"
+                                                android:layout_gravity="center_vertical"
+                                                android:paddingEnd="1.5dip"
+                                                android:paddingBottom="3dip"/>
+                                                <TextView
+                                                    android:text="@string/cash"
+                                                    android:textColor="@color/colorPrimaryDark"
+                                                    android:paddingBottom="3dip"
+                                                    android:paddingStart="1.5dip"
+                                                    android:textSize="18sp"/>
+                                            </TableRow>
+                                            <TableRow> <ImageView
+                                                android:layout_column="1"
+                                                android:src="@color/colorAccent"
+                                                android:minWidth="15dip"
+                                                android:minHeight="15dip"
+                                                android:paddingEnd="1.5dip"
+                                                android:paddingBottom="3dip"
+                                                android:layout_gravity="center_vertical"/>
+                                                <TextView
+                                                    android:text="@string/credit_card"
+                                                    android:textColor="@color/colorAccent"
+                                                    android:paddingBottom="3dip"
+                                                    android:paddingStart="1.5dip"
+                                                    android:textSize="16sp"
+                                                    />
+                                            </TableRow>
+                                            <TableRow> <ImageView
+                                                android:layout_column="1"
+                                                android:src="@color/red"
+                                                android:minWidth="15dip"
+                                                android:minHeight="15dip"
+                                                android:paddingEnd="1.5dip"
+                                                android:paddingBottom="3dip"
+                                                android:layout_gravity="center_vertical"/>
+                                                <TextView
+                                                    android:text="@string/debit_card"
+                                                    android:textColor="@color/red"
+                                                    android:paddingBottom="3dip"
+                                                    android:paddingStart="1.5dip"
+                                                    android:textSize="16sp"
+                                                    />
+                                            </TableRow>
+                                            <TableRow> <ImageView
+                                                android:layout_column="1"
+                                                android:src="@color/fab2_color"
+                                                android:minWidth="15dip"
+                                                android:minHeight="15dip"
+                                                android:paddingEnd="1.5dip"
+                                                android:paddingBottom="3dip"
+                                                android:layout_gravity="center_vertical"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:minLines="2"
+                                                    android:paddingBottom="3dip"
+                                                    android:paddingStart="1.5dip"
+                                                    android:text="Online payment \nservices"
+                                                    android:textColor="@color/fab2_color"
+                                                    android:textSize="15sp" />
+                                            </TableRow>
+                                            <TableRow> <ImageView
+                                                android:layout_column="1"
+                                                android:src="@color/blacktext"
+                                                android:minWidth="15dip"
+                                                android:minHeight="15dip"
+                                                android:paddingEnd="1.5dip"
+                                                android:paddingBottom="3dip"
+                                                android:layout_gravity="center_vertical"
+                                                />
+                                                <TextView
+                                                    android:text="@string/on_credit"
+                                                    android:textSize="18sp"
+                                                    android:textColor="@color/blacktext"
+                                                    android:paddingBottom="3dip"
+                                                    android:paddingStart="1.5dip"
+                                                    />
+                                            </TableRow>
+                                            <TableRow> <ImageView
+                                                android:layout_column="1"
+                                                android:src="@color/dark_green"
+                                                android:minWidth="15dip"
+                                                android:minHeight="15dip"
+                                                android:paddingEnd="1.5dip"
+                                                android:paddingBottom="3dip"
+                                                android:layout_gravity="center_vertical"/>
+
+                                                <TextView
+                                                    android:layout_height="wrap_content"
+                                                    android:paddingBottom="3dip"
+                                                    android:paddingStart="1.5dip"
+                                                    android:text="@string/other"
+                                                    android:textColor="@color/dark_green"
+                                                    android:textSize="18sp" />
+                                            </TableRow>
+                                        </TableLayout> -->
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:orientation="horizontal"
+                    android:scrollbarTrackVertical="@color/red"
+                    android:scrollbars="vertical"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    tools:context="com.dharquissandas.budget.MainActivity">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_view_expense_category_table"
+                        android:layout_width="match_parent"
+                        android:layout_height="325dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="4dp"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="3dp">
+
+                        <TextView
+                            android:id="@+id/Expense_category_table_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="EXPENSE CATEGORY TABLE"
+                            android:textColor="@color/colorAccent" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginTop="30dp"
+                            android:background="#e0e0e0" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="35dp"
+                            android:layout_marginStart="8dp">
+
+                            <TableLayout
+                                android:id="@+id/expense_category_table"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/apparel"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_apparel"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/education"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_education"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                </TableRow>
+
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/entertainment"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_entertainment"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/food"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_food"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/gadget"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_gadgets"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/healthandbeauty"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_healthandbeauty"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/selfdevelopment"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_selfdevelopment"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/social"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_social"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/transport"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_transport"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/other_categories"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_other_category"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+                                </TableRow>
+
+                                <TableRow>
+
+                                    <TextView
+                                        android:layout_column="1"
+                                        android:padding="3dip"
+                                        android:text="@string/total"
+                                        android:textAlignment="viewStart"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/expense_for_total2"
+                                        android:layout_marginStart="3dip"
+                                        android:layout_weight="1"
+                                        android:padding="3dip"
+                                        android:textAlignment="center"
+                                        android:textColor="@color/colorPrimaryDarker"
+                                        android:textSize="15sp" />
+                                </TableRow>
+                            </TableLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationview4"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/menu_drawer"
+        android:layout_gravity="start"
+        android:background="@color/back_color"
+        >
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

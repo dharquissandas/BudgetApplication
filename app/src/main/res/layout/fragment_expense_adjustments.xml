@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dharquissandas.budget.AllAdjustments$PlaceholderFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/expenserecyclerviewadjustments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:stackFromEnd="true"
+        android:paddingTop="0dp"
+        android:overScrollMode="never"
+        />
+
+    <TextView
+        android:id="@+id/empty_view_adjustments_expense"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:text="No Adjustment Registered"
+        android:textSize="24sp"
+        android:typeface="monospace"
+        />
+</RelativeLayout>
+

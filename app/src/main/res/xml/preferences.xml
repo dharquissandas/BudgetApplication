@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/general"
+        android:key="pref_key_storage_settings">
+        <ListPreference
+            android:title="Currency"
+            android:summary="Select your preferred currency"
+            android:key="CurrencyType"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues" />
+
+        <Preference
+            android:title="@string/delete_all_income"
+            android:summary="@string/delete_all_income_detail"
+            android:key="delete_all_income" />
+
+        <Preference
+            android:title="@string/delete_all_expense"
+            android:summary="@string/delete_all_expense_detail"
+            android:key="delete_all_expense" />
+
+        <Preference
+        android:title="@string/delete_all_savings"
+        android:summary="@string/delete_all_savings_detail"
+        android:key="delete_all_savings" />
+
+        <Preference
+            android:title="@string/delete_all_adjustments"
+            android:summary="@string/delete_all_adjustments_detail"
+            android:key="delete_all_adjustments" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/backupsettings"
+        android:key="pref_import_export">
+
+        <Preference
+            android:title="@string/backup1"
+            android:summary="@string/backup1_description"
+            android:key="backup1_import" />
+
+        <Preference
+            android:title="@string/backup2"
+            android:summary="@string/backup2_description"
+            android:key="backup2_export" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/app"
+        android:key="pref_key_storage_settings">
+
+        <Preference
+            android:title="@string/report_a_bug"
+            android:summary="@string/report_details">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="mailto:dharquissandas@gmail.com" />
+        </Preference>
+
+        <Preference
+            android:title="@string/Feedback"
+            android:summary="@string/Feedback_details">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="mailto:dharquissandas@gmail.com" />
+
+        </Preference>
+
+        <Preference
+            android:title="@string/budget_name"
+            android:summary="@string/app_details" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,302 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#EEEEEE"
+    android:nestedScrollingEnabled="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.dharquissandas.budget.MainActivity$PlaceholderFragment"
+        android:paddingBottom="80dp">
+        <!-- A CardView that contains a TextView -->
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_budget"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="3dp">
+
+            <TextView
+                android:id="@+id/TotalBudgetLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="TOTAL BUDGET"
+                android:textColor="@color/colorAccent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="#e0e0e0"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+
+
+            <TextView
+                android:id="@+id/TotalBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="4dp"
+                android:text="example"
+                android:textSize="20sp"
+                />
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_income"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="3dp">
+
+                <TextView
+                    android:id="@+id/TotalIncome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="example"
+                    android:textSize="20sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#e0e0e0" />
+
+
+                <TextView
+                    android:id="@+id/TotalIncomeLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="TOTAL INCOME"
+                    android:textAlignment="center"
+                    android:textColor="#4CAF50"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_expense"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="0.5"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="3dp">
+
+                <TextView
+                    android:id="@+id/TotalExpenseLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="TOTAL EXPENSE"
+                    android:textAlignment="center"
+                    android:textColor="#D32F2F"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#e0e0e0" />
+
+                <TextView
+                    android:id="@+id/TotalExpense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="example"
+                    android:textSize="20sp" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/Savings_card"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="3dp">
+
+            <TextView
+                android:id="@+id/savings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="TRANSFER TO SAVINGS"
+                android:textColor="@color/colorAccent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="30dp"
+                android:background="#e0e0e0"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom">
+
+                <View
+                    android:id="@+id/dummysavings"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+            <com.blackcat.currencyedittext.CurrencyEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/transfer_savings"
+            app:decimal_digits="2"
+            android:maxLength="9"
+            android:layout_marginStart="4dp"
+            android:id="@+id/amount_savings"
+            android:layout_gravity="start"
+            android:layout_weight="0.1"/>
+
+            <Button
+                android:id="@+id/savings_transfer_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="4dp"
+                android:text="@string/transfer_button" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+ <!--       <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adjustments_card"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="3dp">
+
+            <TextView
+                android:id="@+id/adjust_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="ADD ADJUSTMENTS"
+                android:textColor="@color/colorAccent"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="#e0e0e0"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom">
+
+        <com.blackcat.currencyedittext.CurrencyEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/adjustments_amount"
+            app:decimal_digits="2"
+            app:allow_negative_values="true"
+            android:layout_gravity="bottom"
+            android:id="@+id/amount_adjustments"
+            android:layout_weight="0.1"
+            android:layout_marginStart="4dp"/>
+
+            <Button
+                android:id="@+id/adjustments_adjust_button"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="4dp"
+                android:text="@string/adjust_button"
+                />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>-->
+
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expenseCategory"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/expenseCategoryLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="CALENDAR"
+                android:textColor="@color/colorAccent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#e0e0e0" />
+
+                <com.applandeo.materialcalendarview.CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    app:headerColor="@color/colorPrimary"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

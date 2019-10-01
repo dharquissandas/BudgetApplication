@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dharquissandas.budget">
+
+    <uses-permission android:name="com.android.alarm.permission.Set_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".add_expense"
+            android:label="@string/title_activity_add_expense"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".add_income"
+            android:label="@string/title_activity_add_income"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Income_data_analysis"
+            android:label="@string/title_income_data_analysis"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PreferencesActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Overall_data_analysis"
+            android:label="@string/title_overall_data_analysis"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Expense_data_analysis"
+            android:label="@string/title_expense_data_analysis"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Savings"
+            android:label="@string/title_activity_savings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Adjustments"
+            android:label="@string/title_activity_adjustments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Help"
+            android:label="Help"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name=".AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DISPLAY_NOTIFICATION" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AllAdjustments"
+            android:label="@string/title_activity_all_adjustments"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.dharquissandas.budget.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

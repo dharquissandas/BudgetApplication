@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dharquissandas.budget.MainActivity">
+
+    <item
+        android:title="@string/home_option"
+        android:id="@+id/Home_option"
+        android:icon="@drawable/ic_home_white_48dp"
+        />
+
+
+    <item android:title="@string/data_analysis_option">
+        <menu>
+            <item android:title="@string/overall_option"
+                android:id="@+id/overall_data_analysis_option"
+                />
+            <item android:title="@string/income_option"
+                android:id="@+id/income_data_analysis_option"/>
+            <item android:title="@string/expense_option"
+                android:id="@+id/expense_data_analysis_option"/>
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none"
+        >
+    <item
+        android:title="@string/savings_option"
+        android:id="@+id/Savings_option"
+        android:icon="@drawable/ic_new"
+        />
+
+    <item
+        android:title="@string/adjust_option"
+        android:id="@+id/adjust_balance_option"
+        android:icon="@drawable/ic_action_name"
+        />
+
+    <item
+        android:title="@string/help_option"
+        android:id="@+id/help_option"
+        android:icon="@drawable/ic_help"
+        />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_preferences"/>
+
+    </group>
+</menu>
+
