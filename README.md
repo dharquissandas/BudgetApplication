@@ -1,5 +1,9 @@
 # Budgeting Android Application
 
+A budgeting application that I made as my first foray into Java and ultimately Android Programming. This was mainly done by myself yet I did have a source of help from one of my friends.
+
+To summerise, an All In One budgeting and saving platform that allows the user to keep track of their expenses. This was a massive undertaking for me and I believe that I ended with some good learnings and experience in this field to utilise later down in my life.
+
 # SMARTWALLET
 # Recording Transactions
 You can add income and expense through the floating add button at the bottom of the home screen. The recorded income and expense can be seen in the income and expense tabs located at the top of the home screen. To edit or delete a recorded transaction, click on it and select delete or edit.
